@@ -1,0 +1,268 @@
+{
+  "_comment": [
+    "FAST PC News - the LATEST items on About -> PC News",
+    "",
+    "Written nightly by the news sweep step of the daily-intel-watch scheduled task, committed",
+    "here on main, and published to fast-updates/intel/ by tools/Publish-IntelFeed.ps1, which",
+    "refuses the file if any rule below is broken. FAST also ships this copy and uses whichever",
+    "is newer (PcNewsData.Load). PcNewsFileTests pins the same rules on the shipped copy.",
+    "",
+    "THE PAGE IS FREE AND ONLY INFORMS. An item says what happened, who it affects and where it",
+    "came from. Whether to install or roll back a driver, and what to do about a Windows update,",
+    "is the advice on the paid GPU Drivers and System Score pages, so no item gives it.",
+    "",
+    "FIELDS (every item):",
+    "  id       - stable, unique, lower-case words and hyphens, e.g. 2026-10-21-nvidia-621-01-black-screens",
+    "  date     - yyyy-MM-dd the news happened (not the day the sweep found it)",
+    "  kind     - problem | release",
+    "  category - problems only: stability (crashes, black screens, freezes, games that will not",
+    "             start) | performance (FPS, stutter, latency) | security",
+    "  status   - problems only: confirmed (the vendor, Microsoft or Epic says so) | reported",
+    "             (at least two independent outlets or threads, no vendor statement yet)",
+    "  headline - up to 100 characters, FAST's own words",
+    "  summary  - up to 400 characters, one or two sentences, FAST's own words, consequence first",
+    "  applies  - tags FAST matches against this PC in code, OR'd: all | gpu:nvidia | gpu:amd |",
+    "             gpu:intel | gpu-name:<text in the GPU name, e.g. RTX 50> | cpu:intel | cpu:amd |",
+    "             cpu-name:<text in the CPU name, e.g. i9-14> | game:fortnite | app:obs",
+    "  sources  - [{ name, url }], https only; a reported problem needs two",
+    "  expires  - yyyy-MM-dd, no more than 31 days after date",
+    "SECURITY ITEMS ALSO HAVE:",
+    "  audience - who is affected, in plain words; say so when ordinary gaming PCs are not",
+    "  action   - optional, what to do (update the browser, rotate keys). Security only.",
+    "PROBLEMS MAY ALSO HAVE:",
+    "  fixed_in - optional, what fixes it, copied from the vendor's own page, never worked out:",
+    "             { nvidia_driver: one GeForce driver per branch, e.g. [616.56, 610.88],",
+    "               windows_builds: build.revision per Windows version, e.g. [26100.7019] }.",
+    "             FAST compares them with the PC in code and says it has the fix or needs it",
+    "             (PcNews.FixStatus), only where the applies tags match or applies is empty.",
+    "",
+    "RULES: no advice in headline or summary; no em dashes; never name a product as the cause of",
+    "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
+    "a single article or a rumour is not news; at most 20 live items."
+  ],
+  "last_updated": "2026-10-28",
+  "items": [
+    {
+      "id": "2026-10-27-discord-public-server-messages-on-web",
+      "date": "2026-10-27",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Discord will put messages from large public servers on the web, where search engines can find them",
+      "summary": "From November 16 every Discoverable Server, a publicly listed server with at least 1,000 members, gets a public web page with automatic chat summaries. From mid-December its public channel messages can appear there and in web search, without usernames or avatars. Private servers and DMs are left out, and it starts switched off in the EU, UK and four other countries.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Discord",
+          "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/"
+        }
+      ],
+      "audience": "Anyone who posts in a large public Discord server. Private servers, direct messages and the PC itself are not affected.",
+      "action": "To keep your future messages off these pages, turn off \"Show my message content from Discoverable channels on web pages\" in Discord under User Settings > Data and Privacy.",
+      "expires": "2026-11-06"
+    },
+    {
+      "id": "2026-10-26-emudhra-certificates-distrusted",
+      "date": "2026-10-26",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Windows and browsers stop trusting eMudhra certificates after eight of its keys proved guessable",
+      "summary": "Researchers found eight signing keys from eMudhra, a certificate authority, so weak that anyone could recover them, which could have let an attacker fake a secure website or signed software. eMudhra revoked them, browsers are blocking them, and Microsoft has removed eMudhra's root certificates from the Windows trusted list. No misuse has been reported.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Microsoft KB5134133",
+          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/10/kb5134133-windows-11-24h2-25h2-26h2-update"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/"
+        }
+      ],
+      "audience": "Every Windows PC in principle. A PC that is online and keeps Windows and its browser updated gets the block automatically.",
+      "action": "Nothing to do on a PC that is online. Keep Windows and your browser updated.",
+      "expires": "2026-11-05"
+    },
+    {
+      "id": "2026-10-24-nvidia-621-01-video-freezes",
+      "date": "2026-10-24",
+      "kind": "problem",
+      "category": "stability",
+      "status": "confirmed",
+      "headline": "NVIDIA's hotfix 621.12 fixes the 621.01 bug that freezes or blacks out the screen during video",
+      "summary": "NVIDIA confirmed a bug in GeForce driver 621.01 that freezes the screen or turns it black for several seconds while a video plays in Chrome, Edge or VLC, sometimes when a game starts with a video open. On October 27 NVIDIA released optional beta hotfix 621.12, which it says fixes it on RTX 50 cards. The screen recovers without a restart.",
+      "applies": [
+        "gpu:nvidia"
+      ],
+      "sources": [
+        {
+          "name": "NVIDIA hotfix 621.12",
+          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5938"
+        },
+        {
+          "name": "NVIDIA 621.01 feedback thread",
+          "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591981/geforce-grd-62101-feedback-thread-released-102126/"
+        },
+        {
+          "name": "VideoCardz",
+          "url": "https://videocardz.com/newz/nvidia-confirms-geforce-621-01-driver-bug-causing-video-freezes-and-black-screens"
+        }
+      ],
+      "expires": "2026-11-23"
+    },
+    {
+      "id": "2026-10-23-time4popcorn-updater-flaw",
+      "date": "2026-10-23",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "Millions of PCs still run a forgotten Popcorn Time updater that an attacker could have hijacked",
+      "summary": "Researchers report that Time4Popcorn, an abandoned fork of Popcorn Time, leaves an updater running that downloads updates without encryption or signature checks, so whoever held its old web address could run code with full rights on about 3 million Windows PCs. The researchers took the address and pushed an update that switched the updater off. No attacks have been reported.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Eye Security",
+          "url": "https://labs.eye.security/cve-2026-30612-a-vulnerability-in-time4popcorn-popcorntime/"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/"
+        }
+      ],
+      "audience": "Anyone who installed Time4Popcorn, sold as Popcorn Time, on Windows, macOS or Android, even if it has not been opened in years. PCs without it are not affected.",
+      "action": "If Popcorn Time is installed, remove it in Settings > Apps > Installed apps.",
+      "expires": "2026-11-22"
+    },
+    {
+      "id": "2026-10-23-obs-studio-33",
+      "date": "2026-10-23",
+      "kind": "release",
+      "headline": "OBS Studio 33 updates browser sources and changes where plugins are installed",
+      "summary": "OBS Studio 33.0 moves browser sources and docks to a 2026 browser engine, gives plugins a new folder layout (plugins in the old folders keep loading until version 34), detects fullscreen games better in Game Capture and supports the newest NVIDIA Broadcast audio and video effects.",
+      "applies": [
+        "app:obs"
+      ],
+      "sources": [
+        {
+          "name": "OBS Studio 33.0 release notes",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0"
+        }
+      ],
+      "expires": "2026-11-06"
+    },
+    {
+      "id": "2026-10-22-capcom-id-breach",
+      "date": "2026-10-22",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Capcom confirms a breach of CAPCOM ID that exposed about 11.7 million account emails",
+      "summary": "Capcom says attackers got into CAPCOM ID, the account system behind its websites and some online games, and took email addresses and sign-in details such as the last login time and IP address for about 11.7 million accounts. Capcom says card details were not involved and it has found no sign that passwords were taken; it reset 196 accounts whose passwords the attackers changed.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Capcom statement",
+          "url": "https://www.capcom.co.jp/ir/english/news/html/e261022.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/"
+        }
+      ],
+      "audience": "Anyone with a CAPCOM ID account. The PC itself is not affected.",
+      "action": "Be wary of emails or messages about your Capcom account, and do not open their links or attachments. Turning on two-factor sign-in where you can is a sensible precaution.",
+      "expires": "2026-11-01"
+    },
+    {
+      "id": "2026-10-20-plex-media-server-plex2shell",
+      "date": "2026-10-20",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Attackers are taking over older Plex Media Server installs to run crypto miners",
+      "summary": "Four chained flaws in Plex Media Server 1.43.2 and older, nicknamed Plex2Shell, let an attacker take over a server that can be reached from the internet without signing in. Attacks began on October 17 and installed crypto miners and proxy software, and the US agency CISA now lists the flaws as exploited. Plex fixed them in version 1.43.3.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "CISA Known Exploited Vulnerabilities",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/"
+        }
+      ],
+      "audience": "Anyone running Plex Media Server version 1.43.2 or older on a PC or home server that can be reached from the internet. Watching through the Plex app alone is not affected.",
+      "action": "Update Plex Media Server to the newest version from Plex.",
+      "expires": "2026-11-19"
+    },
+    {
+      "id": "2026-10-13-windows-shell-exploited-flaw",
+      "date": "2026-10-13",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "October's Windows security update fixes a flaw attackers were already using",
+      "summary": "Microsoft's October 13 security update fixes CVE-2026-96951, a Windows Shell flaw that attackers were exploiting to slip past the warning Windows shows on files downloaded from the internet. It needs someone to open a booby-trapped file or link, and the same update fixes two other flaws that were public before the patch.",
+      "applies": [
+        "all"
+      ],
+      "sources": [
+        {
+          "name": "Microsoft Security Response Center",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+        }
+      ],
+      "audience": "Every Windows PC that has not yet installed the October 13, 2026 security update or a later one.",
+      "action": "Keep Windows updated: open Windows Update and install the latest security update if it is waiting.",
+      "fixed_in": {
+        "windows_builds": [
+          "26100.9711",
+          "26200.9711",
+          "26300.9711"
+        ]
+      },
+      "expires": "2026-11-12"
+    },
+    {
+      "id": "2026-09-30-nvidia-driver-security-bulletin",
+      "date": "2026-09-30",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "NVIDIA fixes high-severity security flaws in its GeForce drivers",
+      "summary": "NVIDIA's September security bulletin lists flaws in its GPU display driver that could let a program already running on a PC gain higher privileges or run code in the kernel. On Windows, GeForce drivers older than 616.56, 610.88 and 582.78, depending on the driver branch, are affected.",
+      "applies": [
+        "gpu:nvidia"
+      ],
+      "sources": [
+        {
+          "name": "NVIDIA security bulletin",
+          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5861"
+        }
+      ],
+      "audience": "PCs with an NVIDIA graphics card on a GeForce driver older than 616.56, 610.88 or 582.78, depending on the branch. An attacker must already be able to run a program on the PC.",
+      "fixed_in": {
+        "nvidia_driver": [
+          "616.56",
+          "610.88",
+          "582.78"
+        ]
+      },
+      "expires": "2026-10-30"
+    }
+  ]
+}
