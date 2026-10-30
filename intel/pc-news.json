@@ -40,7 +40,7 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-10-29",
+  "last_updated": "2026-10-30",
   "items": [
     {
       "id": "2026-10-29-chrome-search-hijacking-extensions",
@@ -189,7 +189,7 @@
       "date": "2026-10-23",
       "kind": "release",
       "headline": "OBS Studio 33 updates browser sources and changes where plugins are installed",
-      "summary": "OBS Studio 33.0 moves browser sources and docks to a 2026 browser engine, gives plugins a new folder layout (plugins in the old folders keep loading until version 34), detects fullscreen games better in Game Capture and supports the newest NVIDIA Broadcast audio and video effects.",
+      "summary": "OBS Studio 33.0 moves browser sources and docks to a 2026 browser engine, gives plugins a new folder layout (old folders keep working until version 34) and supports the newest NVIDIA Broadcast effects. Hotfix 33.0.1 on 2026-10-29 stops OBS crashing or freezing at startup or sign-in for people linked to Twitch or YouTube.",
       "applies": [
         "app:obs"
       ],
@@ -197,6 +197,10 @@
         {
           "name": "OBS Studio 33.0 release notes",
           "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0"
+        },
+        {
+          "name": "OBS Studio 33.0.1 release notes",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1"
         }
       ],
       "expires": "2026-11-06"
