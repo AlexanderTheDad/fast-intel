@@ -102,7 +102,7 @@
     "advanced_shader_delivery holds Microsoft's published driver minimums for one Hold bullet."
   ],
 
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-30",
 
   "security_advisories": {
     "_comment": [
@@ -301,9 +301,9 @@
       "fortnite": {
         "recommended": "26.3.1",
         "latest_tested": "26.3.1",
-        "latest_known": "26.10.1",
-        "latest_known_released": "2026-10-20",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; games can crash or time out when another overlay such as Xbox Game Bar opens or closes while AMD's Performance Metrics Overlay is on; on RX 9000 cards using FSR Frame Generation, switching apps can crash or hang the PC; and on RX 7000 cards Assassin's Creed Black Flag Resynced and Valor Mortis can crash or time out.",
+        "latest_known": "26.10.2",
+        "latest_known_released": "2026-10-30",
+        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the RDNA 4 launch driver" },
         "avoid": [],
         "notes": {
@@ -316,9 +316,9 @@
       "fortnite": {
         "recommended": "26.3.1",
         "latest_tested": "26.3.1",
-        "latest_known": "26.10.1",
-        "latest_known_released": "2026-10-20",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; games can crash or time out when another overlay such as Xbox Game Bar opens or closes while AMD's Performance Metrics Overlay is on; on RX 9000 cards using FSR Frame Generation, switching apps can crash or hang the PC; and on RX 7000 cards Assassin's Creed Black Flag Resynced and Valor Mortis can crash or time out.",
+        "latest_known": "26.10.2",
+        "latest_known_released": "2026-10-30",
+        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the previous Adrenalin release" },
         "avoid": ["24.1.1", "23.12.1"],
         "notes": {
@@ -333,9 +333,9 @@
       "fortnite": {
         "recommended": "26.3.1",
         "latest_tested": "26.3.1",
-        "latest_known": "26.10.1",
-        "latest_known_released": "2026-10-20",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; games can crash or time out when another overlay such as Xbox Game Bar opens or closes while AMD's Performance Metrics Overlay is on; on RX 9000 cards using FSR Frame Generation, switching apps can crash or hang the PC; and on RX 7000 cards Assassin's Creed Black Flag Resynced and Valor Mortis can crash or time out.",
+        "latest_known": "26.10.2",
+        "latest_known_released": "2026-10-30",
+        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the previous Adrenalin release" },
         "avoid": ["24.1.1"],
         "notes": {
