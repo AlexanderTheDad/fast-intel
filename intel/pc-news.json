@@ -40,8 +40,25 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-11-01",
   "items": [
+    {
+      "id": "2026-11-01-fortnite-treasure-hunters",
+      "date": "2026-11-01",
+      "kind": "release",
+      "headline": "Fortnite's Treasure Hunters season moves Battle Royale to a new 80-player island",
+      "summary": "The new season starts on November 1 on Crossbones Isle, an island built for 80 players a match, with One Piece powers such as the Gum-Gum Fruit and new weapons dropping on set days through November. Epic says Chapter 7 ends with a live event on December 5.",
+      "applies": [
+        "game:fortnite"
+      ],
+      "sources": [
+        {
+          "name": "Epic Games",
+          "url": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time"
+        }
+      ],
+      "expires": "2026-11-15"
+    },
     {
       "id": "2026-10-29-chrome-search-hijacking-extensions",
       "date": "2026-10-29",
@@ -305,33 +322,6 @@
         ]
       },
       "expires": "2026-11-12"
-    },
-    {
-      "id": "2026-09-30-nvidia-driver-security-bulletin",
-      "date": "2026-09-30",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "NVIDIA fixes high-severity security flaws in its GeForce drivers",
-      "summary": "NVIDIA's September security bulletin lists flaws in its GPU display driver that could let a program already running on a PC gain higher privileges or run code in the kernel. On Windows, GeForce drivers older than 616.56, 610.88 and 582.78, depending on the driver branch, are affected.",
-      "applies": [
-        "gpu:nvidia"
-      ],
-      "sources": [
-        {
-          "name": "NVIDIA security bulletin",
-          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5861"
-        }
-      ],
-      "audience": "PCs with an NVIDIA graphics card on a GeForce driver older than 616.56, 610.88 or 582.78, depending on the branch. An attacker must already be able to run a program on the PC.",
-      "fixed_in": {
-        "nvidia_driver": [
-          "616.56",
-          "610.88",
-          "582.78"
-        ]
-      },
-      "expires": "2026-10-30"
     }
   ]
 }
