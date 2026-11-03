@@ -40,7 +40,7 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-03",
   "items": [
     {
       "id": "2026-11-01-fortnite-treasure-hunters",
@@ -58,6 +58,29 @@
         }
       ],
       "expires": "2026-11-15"
+    },
+    {
+      "id": "2026-10-31-volta-infostealer-gaming-accounts",
+      "date": "2026-10-31",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "A new Windows infostealer called VOLTA goes after Steam, Battle.net, Roblox and Discord accounts",
+      "summary": "Cisco Talos researchers describe VOLTA, Windows malware sold as a build-to-order kit, that takes saved browser passwords, cookies and cards along with Steam, Battle.net, Roblox and Discord sessions, then can have an AI model rank victims by what their accounts are worth. Talos has not said how it spreads or tied it to a named campaign.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Cisco Talos",
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/202281/malware/volta-the-infostealer-that-asks-an-ai-which-victims-are-worth-the-effort.html"
+        }
+      ],
+      "audience": "Anyone who runs a download carrying this malware. A PC that has not run it is not affected.",
+      "action": "Get games, mods and tools only from official sources. If you ran something suspicious, change your Steam, Battle.net, Discord and email passwords from another device.",
+      "expires": "2026-11-10"
     },
     {
       "id": "2026-10-29-chrome-search-hijacking-extensions",
@@ -221,29 +244,6 @@
         }
       ],
       "expires": "2026-11-06"
-    },
-    {
-      "id": "2026-10-22-capcom-id-breach",
-      "date": "2026-10-22",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "Capcom confirms a breach of CAPCOM ID that exposed about 11.7 million account emails",
-      "summary": "Capcom says attackers got into CAPCOM ID, the account system behind its websites and some online games, and took email addresses and sign-in details such as the last login time and IP address for about 11.7 million accounts. Capcom says card details were not involved and it has found no sign that passwords were taken; it reset 196 accounts whose passwords the attackers changed.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Capcom statement",
-          "url": "https://www.capcom.co.jp/ir/english/news/html/e261022.html"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/"
-        }
-      ],
-      "audience": "Anyone with a CAPCOM ID account. The PC itself is not affected.",
-      "action": "Be wary of emails or messages about your Capcom account, and do not open their links or attachments. Turning on two-factor sign-in where you can is a sensible precaution.",
-      "expires": "2026-11-01"
     },
     {
       "id": "2026-10-21-windows-11-26h2-full-availability",
