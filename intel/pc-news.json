@@ -40,8 +40,35 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "items": [
+    {
+      "id": "2026-11-04-nikke-pc-launcher-malware",
+      "date": "2026-11-04",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "The NIKKE PC launcher was tampered with and served malware to players for weeks",
+      "summary": "Level Infinite says a third party altered script files in the PC launcher for Goddess of Victory: NIKKE, and it shipped a fixed client on November 4. Researchers say the altered files, changed from late September, installed a remote-access tool that can take NIKKE logins, saved browser passwords and crypto wallet data. Only the PC launcher is named; the phone versions are not.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/"
+        },
+        {
+          "name": "Game8",
+          "url": "https://game8.co/articles/latest/nikke-pc-launcher-files-were-reportedly-compromised-for-over-a-month-to-spread-malware"
+        },
+        {
+          "name": "NIKKE official statement",
+          "url": "https://x.com/NIKKE_en/status/2117817602659770434"
+        }
+      ],
+      "audience": "Anyone who opened the NIKKE PC launcher from late September to November 4. A PC without NIKKE is not affected.",
+      "action": "Update the NIKKE launcher and run a full antivirus scan. If you played in that window, change your NIKKE, email and browser-saved passwords from another device.",
+      "expires": "2026-12-04"
+    },
     {
       "id": "2026-11-01-fortnite-treasure-hunters",
       "date": "2026-11-01",
@@ -180,12 +207,16 @@
       "kind": "problem",
       "category": "stability",
       "status": "confirmed",
-      "headline": "NVIDIA's hotfix 621.12 fixes the 621.01 bug that freezes or blacks out the screen during video",
-      "summary": "NVIDIA confirmed a bug in GeForce driver 621.01 that freezes the screen or turns it black for several seconds while a video plays in Chrome, Edge or VLC, sometimes when a game starts with a video open. On October 27 NVIDIA released optional beta hotfix 621.12, which it says fixes it on RTX 50 cards. The screen recovers without a restart.",
+      "headline": "NVIDIA's 621.14 driver fixes the 621.01 bug that freezes or blacks out the screen during video",
+      "summary": "NVIDIA confirmed a bug in GeForce driver 621.01 that freezes the screen or turns it black for several seconds while a video plays in Chrome, Edge or VLC, sometimes when a game starts with a video open. Beta hotfix 621.12 fixed it on October 27, and Game Ready driver 621.14, out November 4, carries the fix for RTX 50 cards. The screen recovers without a restart.",
       "applies": [
         "gpu:nvidia"
       ],
       "sources": [
+        {
+          "name": "NVIDIA 621.14 feedback thread",
+          "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/592433/geforce-grd-62114-feedback-thread-released-11426/"
+        },
         {
           "name": "NVIDIA hotfix 621.12",
           "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5938"
