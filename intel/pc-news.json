@@ -40,7 +40,7 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "items": [
     {
       "id": "2026-11-04-nikke-pc-launcher-malware",
@@ -275,25 +275,6 @@
         }
       ],
       "expires": "2026-11-06"
-    },
-    {
-      "id": "2026-10-21-windows-11-26h2-full-availability",
-      "date": "2026-10-21",
-      "kind": "release",
-      "headline": "Windows 11 version 26H2 is now offered to every eligible PC running 24H2 or 25H2",
-      "summary": "Microsoft says the 26H2 rollout has reached full availability. It switches on features already delivered to 24H2 and 25H2, arrives as a small update that finishes with a single restart, and brings nothing new for games.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Microsoft release health",
-          "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2"
-        },
-        {
-          "name": "Windows Latest",
-          "url": "https://www.windowslatest.com/2026/10/27/microsoft-confirms-windows-11-26h2-is-now-available-for-everyone-and-it-installs-in-under-five-minutes/"
-        }
-      ],
-      "expires": "2026-11-04"
     },
     {
       "id": "2026-10-20-plex-media-server-plex2shell",
