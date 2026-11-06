@@ -40,8 +40,31 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-06",
   "items": [
+    {
+      "id": "2026-11-06-windows-paint-network-flaw",
+      "date": "2026-11-06",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "A Windows Paint flaw could let an attacker run code over a network, and its fix comes from the Store",
+      "summary": "Microsoft rates CVE-2026-83844, a flaw in the Paint app, at 8.1 out of 10: an attacker could run code on a PC over a network without signing in, though Microsoft says an attack is hard to pull off and none has been seen. The Hacker News reports the fixed Paint build, 11.2609.401.0, arrives through the Microsoft Store, not Windows Update.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Microsoft Security Response Center",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83844"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html"
+        }
+      ],
+      "audience": "Every Windows PC with the Paint app whose copy has not yet updated from the Microsoft Store. Attacks have not been seen.",
+      "action": "Open the Microsoft Store, go to Downloads and select Get updates so Paint installs its newest version.",
+      "expires": "2026-12-06"
+    },
     {
       "id": "2026-11-04-nikke-pc-launcher-malware",
       "date": "2026-11-04",
@@ -177,29 +200,6 @@
       "audience": "Anyone who posts in a large public Discord server. Private servers, direct messages and the PC itself are not affected.",
       "action": "To keep your future messages off these pages, turn off \"Show my message content from Discoverable channels on web pages\" in Discord under User Settings > Data and Privacy.",
       "expires": "2026-11-06"
-    },
-    {
-      "id": "2026-10-26-emudhra-certificates-distrusted",
-      "date": "2026-10-26",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "Windows and browsers stop trusting eMudhra certificates after eight of its keys proved guessable",
-      "summary": "Researchers found eight signing keys from eMudhra, a certificate authority, so weak that anyone could recover them, which could have let an attacker fake a secure website or signed software. eMudhra revoked them, browsers are blocking them, and Microsoft has removed eMudhra's root certificates from the Windows trusted list. No misuse has been reported.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Microsoft KB5134133",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/10/kb5134133-windows-11-24h2-25h2-26h2-update"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/"
-        }
-      ],
-      "audience": "Every Windows PC in principle. A PC that is online and keeps Windows and its browser updated gets the block automatically.",
-      "action": "Nothing to do on a PC that is online. Keep Windows and your browser updated.",
-      "expires": "2026-11-05"
     },
     {
       "id": "2026-10-24-nvidia-621-01-video-freezes",
