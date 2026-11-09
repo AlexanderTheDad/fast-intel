@@ -40,8 +40,23 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-09",
   "items": [
+    {
+      "id": "2026-11-09-discord-desktop-november-update",
+      "date": "2026-11-09",
+      "kind": "release",
+      "headline": "Discord's November update makes Go Live streaming lighter on the CPU and the app quicker to open",
+      "summary": "Discord says Go Live now copies fewer frames from the GPU to the CPU, cutting its CPU use while streaming by about 4.5 percent, and that the desktop app reaches a usable state noticeably faster than in April.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Discord",
+          "url": "https://discord.com/blog/discord-patch-notes-november-9-2026"
+        }
+      ],
+      "expires": "2026-11-23"
+    },
     {
       "id": "2026-11-06-windows-paint-network-flaw",
       "date": "2026-11-06",
@@ -152,33 +167,6 @@
       "audience": "Anyone who runs a download carrying this malware. A PC that has not run it is not affected.",
       "action": "Get games, mods and tools only from official sources. If you ran something suspicious, change your Steam, Battle.net, Discord and email passwords from another device.",
       "expires": "2026-11-10"
-    },
-    {
-      "id": "2026-10-29-chrome-search-hijacking-extensions",
-      "date": "2026-10-29",
-      "kind": "problem",
-      "category": "security",
-      "status": "reported",
-      "headline": "Hundreds of Chrome add-ons quietly sent users' web searches through their makers' servers",
-      "summary": "Researchers report 319 Chrome extensions, posing as PDF converters, manual finders, safe-search and AI search tools, that swap the browser's search engine and pass every search through servers their operators control before showing Bing or Yahoo results. Together they list about 13.4 million installs over ten years. Several outlets report most are no longer in the Chrome Web Store.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/"
-        },
-        {
-          "name": "GBHackers",
-          "url": "https://gbhackers.com/chrome-extensions-hijacking/"
-        },
-        {
-          "name": "Socket research",
-          "url": "https://socket.dev/blog/searchjacked"
-        }
-      ],
-      "audience": "Anyone who added a PDF, manual-finder, safe-search or AI search extension to Chrome. The PC itself is not otherwise affected.",
-      "action": "Open Chrome's extensions page and remove any add-on you do not recognise, then check that the search engine in Chrome's settings is the one you chose.",
-      "expires": "2026-11-08"
     },
     {
       "id": "2026-10-28-windows-kb5127936-preview",
