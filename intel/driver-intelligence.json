@@ -102,7 +102,7 @@
     "advanced_shader_delivery holds Microsoft's published driver minimums for one Hold bullet."
   ],
 
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-09",
 
   "security_advisories": {
     "_comment": [
@@ -216,7 +216,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.14",
         "latest_known_released": "2026-11-04",
-        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one, and some DX12 games, among them Path of Exile 2, Borderlands 4 and WoW: Forever, crash or hang while building shaders.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74"],
         "notes": {
@@ -232,7 +232,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.14",
         "latest_known_released": "2026-11-04",
-        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one, and some DX12 games, among them Path of Exile 2, Borderlands 4 and WoW: Forever, crash or hang while building shaders.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01"],
         "notes": {
@@ -249,7 +249,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.14",
         "latest_known_released": "2026-11-04",
-        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one, and some DX12 games, among them Path of Exile 2, Borderlands 4 and WoW: Forever, crash or hang while building shaders.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01", "537.58"],
         "notes": {
@@ -267,7 +267,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.14",
         "latest_known_released": "2026-11-04",
-        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one, and some DX12 games, among them Path of Exile 2, Borderlands 4 and WoW: Forever, crash or hang while building shaders.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01"],
         "notes": {
@@ -284,7 +284,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.14",
         "latest_known_released": "2026-11-04",
-        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA says this release fixes the screen freezing or going black during video playback on some RTX 50 cards after 621.01, and lists no open issues of its own. Users report S.T.A.L.K.E.R. 2 still hangs on a black screen at launch on every 621 driver, including this one, and some DX12 games, among them Path of Exile 2, Borderlands 4 and WoW: Forever, crash or hang while building shaders.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74"],
         "notes": {
