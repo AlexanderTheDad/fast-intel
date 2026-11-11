@@ -40,8 +40,50 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-11",
   "items": [
+    {
+      "id": "2026-11-10-outlook-exploited-flaw",
+      "date": "2026-11-10",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "November's Microsoft updates fix an Outlook flaw attackers were already using",
+      "summary": "Microsoft says CVE-2026-124194 in Outlook was exploited before its November 10 fix: opening a booby-trapped message file could make Outlook contact an attacker's server without its usual warning and hand over the Windows sign-in hash, which could be used to pose as the user. Opening the file is needed; the preview pane is not enough.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Microsoft Security Response Center",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/"
+        }
+      ],
+      "audience": "Anyone who uses the Outlook desktop app on Windows and has not installed November's Office updates. PCs without Outlook are not affected.",
+      "action": "Keep Office and Windows updated, and do not open message files from people you do not know.",
+      "expires": "2026-12-10"
+    },
+    {
+      "id": "2026-11-10-windows-kb5132061-usb-audio-fix",
+      "date": "2026-11-10",
+      "kind": "release",
+      "headline": "November's Windows 11 update brings back USB audio devices that stopped working in September",
+      "summary": "Microsoft says the November 10 update for Windows 11 24H2, 25H2 and 26H2 fixes USB Audio 1.0 devices that failed to start with error code 10 after September's security update, along with this month's security fixes.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5132061-windows-11-24h2-25h2-26h2-security-update"
+        },
+        {
+          "name": "Windows release health",
+          "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2"
+        }
+      ],
+      "expires": "2026-11-24"
+    },
     {
       "id": "2026-11-09-discord-desktop-november-update",
       "date": "2026-11-09",
@@ -56,6 +98,52 @@
         }
       ],
       "expires": "2026-11-23"
+    },
+    {
+      "id": "2026-11-09-chrome-exploited-flaw",
+      "date": "2026-11-09",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Chrome 157 fixes a browser flaw Google says attackers are already using",
+      "summary": "Google's November 9 Chrome update for Windows, version 157.0.8103.50/51, fixes nine security flaws, and Google says an exploit for one of them, CVE-2026-125350 in Chrome's XML handling, exists in the wild. Chrome installs the update itself but only finishes it after a restart.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Chrome Releases",
+          "url": "https://chromereleases.googleblog.com/"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/"
+        }
+      ],
+      "audience": "Anyone who uses Google Chrome on a PC and has not restarted it since the update arrived.",
+      "action": "Keep your browser updated: open Chrome's menu, Help, About Google Chrome, and select Relaunch if it asks.",
+      "expires": "2026-12-09"
+    },
+    {
+      "id": "2026-11-09-sega-newsletter-breach",
+      "date": "2026-11-09",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "A breach at SEGA's newsletter provider exposed 2.2 million subscriber email addresses",
+      "summary": "SEGA says attackers who broke into ARARA, the company that sends its Japanese newsletters, took 2,196,044 subscriber email addresses. SEGA says names, passwords and card details were not taken, SEGA Account emails were not affected, and it has seen no misuse so far.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "SEGA",
+          "url": "https://www.sega.co.jp/release/261109_1.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/"
+        }
+      ],
+      "audience": "Anyone subscribed to SEGA or SEGA Fave newsletters in Japan, such as arcade, Lucky Kuji or Tokyo Game Show mailings. The PC itself is not affected.",
+      "action": "Be wary of emails that claim to come from SEGA or a card company and ask you to sign in or pay.",
+      "expires": "2026-11-19"
     },
     {
       "id": "2026-11-06-windows-paint-network-flaw",
@@ -144,29 +232,6 @@
         }
       ],
       "expires": "2026-11-15"
-    },
-    {
-      "id": "2026-10-31-volta-infostealer-gaming-accounts",
-      "date": "2026-10-31",
-      "kind": "problem",
-      "category": "security",
-      "status": "reported",
-      "headline": "A new Windows infostealer called VOLTA goes after Steam, Battle.net, Roblox and Discord accounts",
-      "summary": "Cisco Talos researchers describe VOLTA, Windows malware sold as a build-to-order kit, that takes saved browser passwords, cookies and cards along with Steam, Battle.net, Roblox and Discord sessions, then can have an AI model rank victims by what their accounts are worth. Talos has not said how it spreads or tied it to a named campaign.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Cisco Talos",
-          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
-        },
-        {
-          "name": "Security Affairs",
-          "url": "https://securityaffairs.com/202281/malware/volta-the-infostealer-that-asks-an-ai-which-victims-are-worth-the-effort.html"
-        }
-      ],
-      "audience": "Anyone who runs a download carrying this malware. A PC that has not run it is not affected.",
-      "action": "Get games, mods and tools only from official sources. If you ran something suspicious, change your Steam, Battle.net, Discord and email passwords from another device.",
-      "expires": "2026-11-10"
     },
     {
       "id": "2026-10-28-windows-kb5127936-preview",
