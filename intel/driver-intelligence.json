@@ -102,7 +102,7 @@
     "advanced_shader_delivery holds Microsoft's published driver minimums for one Hold bullet."
   ],
 
-  "last_updated": "2026-11-09",
+  "last_updated": "2026-11-11",
 
   "security_advisories": {
     "_comment": [
@@ -195,6 +195,17 @@
       }
     ],
     "amd": [
+      {
+        "id": "AMD-SB-6028",
+        "title": "AMD Graphics Vulnerabilities - November 2026",
+        "published": "2026-11-10",
+        "severity": "high",
+        "max_cvss": 8.9,
+        "summary": "A specially crafted video, or a program already running on the PC, could take control of it or crash it, through flaws in the Radeon graphics driver and the video decoding firmware on Radeon RX cards.",
+        "bulletin_url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-6028.html",
+        "cves": ["CVE-2025-0047", "CVE-2024-36313", "CVE-2026-0439", "CVE-2026-0445", "CVE-2026-0449", "CVE-2026-0469", "CVE-2024-21940", "CVE-2026-0002", "CVE-2026-0443", "CVE-2026-0446", "CVE-2026-0471", "CVE-2026-0477", "CVE-2026-0478", "CVE-2026-0479", "CVE-2026-0440", "CVE-2026-0442", "CVE-2026-0444", "CVE-2026-0447", "CVE-2026-0472", "CVE-2026-0448", "CVE-2026-0452", "CVE-2026-0468", "CVE-2025-66663", "CVE-2025-62622", "CVE-2025-66662", "CVE-2026-0451", "CVE-2024-36317", "CVE-2024-36325", "CVE-2025-66661", "CVE-2024-36344"],
+        "fixed_in_version": "26.7.1"
+      },
       {
         "id": "AMD-SB-6024",
         "title": "AMD Graphics Driver Vulnerabilities - February 2026",
@@ -303,7 +314,7 @@
         "latest_tested": "26.3.1",
         "latest_known": "26.10.2",
         "latest_known_released": "2026-10-30",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
+        "latest_known_reports": "AMD has confirmed that 26.10.1 and 26.10.2 keep the system drive busy with constant small writes that add up to tens of gigabytes over time, and says 26.11.1 will fix it. AMD also lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the RDNA 4 launch driver" },
         "avoid": [],
         "notes": {
@@ -318,7 +329,7 @@
         "latest_tested": "26.3.1",
         "latest_known": "26.10.2",
         "latest_known_released": "2026-10-30",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
+        "latest_known_reports": "AMD has confirmed that 26.10.1 and 26.10.2 keep the system drive busy with constant small writes that add up to tens of gigabytes over time, and says 26.11.1 will fix it. AMD also lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the previous Adrenalin release" },
         "avoid": ["24.1.1", "23.12.1"],
         "notes": {
@@ -335,7 +346,7 @@
         "latest_tested": "26.3.1",
         "latest_known": "26.10.2",
         "latest_known_released": "2026-10-30",
-        "latest_known_reports": "Nothing yet in the field. AMD lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
+        "latest_known_reports": "AMD has confirmed that 26.10.1 and 26.10.2 keep the system drive busy with constant small writes that add up to tens of gigabytes over time, and says 26.11.1 will fix it. AMD also lists these itself: on Windows 10 installing it can switch Smart Access Memory off, so check it is still on afterwards; on RX 9000 cards Cyberpunk 2077 can crash or time out with frame generation on while a video plays on a second screen, and Phantom Blade Zero and Call of Duty: Modern Warfare Remastered can show visual corruption; on RX 7000 cards Assassin's Creed Black Flag Resynced can crash or time out.",
         "fallback": { "version": "25.3.1", "why": "the previous Adrenalin release" },
         "avoid": ["24.1.1"],
         "notes": {
