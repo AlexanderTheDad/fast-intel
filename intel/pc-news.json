@@ -40,8 +40,31 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "items": [
+    {
+      "id": "2026-11-10-windows-signdrop-clfs-exploit",
+      "date": "2026-11-10",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "Public exploit code claims a way to take full control of Windows 11 from an ordinary account",
+      "summary": "Several outlets report that a researcher posted code on November 10 that lets a program already running under a normal account on current Windows 11 gain full SYSTEM control, and the researcher says it can switch off antivirus too. Microsoft has not confirmed it or released a fix, and no attacks using it have been reported.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
+        }
+      ],
+      "audience": "Windows 11 PCs with Microsoft's log file protection on, which is the default on 25H2 and 26H2. An attacker first needs a program running on the PC.",
+      "action": "Keep Windows and Microsoft Defender updated, and do not run programs from sources you do not trust.",
+      "expires": "2026-12-10"
+    },
     {
       "id": "2026-11-10-outlook-exploited-flaw",
       "date": "2026-11-10",
@@ -232,25 +255,6 @@
         }
       ],
       "expires": "2026-11-15"
-    },
-    {
-      "id": "2026-10-28-windows-kb5127936-preview",
-      "date": "2026-10-28",
-      "kind": "release",
-      "headline": "Windows 11's optional October preview update widens Memory Integrity and fixes AMD HDMI audio",
-      "summary": "KB5127936, the optional preview for versions 25H2 and 26H2, says supported PCs may now have Memory Integrity (HVCI) switched on during updates. It also fixes HDMI and DisplayPort audio failing on certain AMD graphics cards and brings a refreshed Gaming Task View in Xbox mode.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Microsoft",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/10/kb5127936-windows-11-25h2-26h2-update"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127936-update-released-with-41-changes-and-fixes/"
-        }
-      ],
-      "expires": "2026-11-11"
     },
     {
       "id": "2026-10-24-nvidia-621-01-video-freezes",
