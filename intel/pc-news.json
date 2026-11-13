@@ -40,8 +40,23 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "items": [
+    {
+      "id": "2026-11-11-capframex-1-9-2",
+      "date": "2026-11-11",
+      "kind": "release",
+      "headline": "CapFrameX 1.9.2 adds a tile overlay you can design yourself and a lighter in-game overlay",
+      "summary": "CapFrameX 1.9.2 brings a tile overlay with its own editor and 45 starter designs, says its overlay now takes less from the game, and fixes PresentMon captures in long sessions and with frame generation. It now needs the .NET 10 Desktop Runtime.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "CapFrameX on GitHub",
+          "url": "https://github.com/CXWorld/CapFrameX/releases/tag/v1.9.2"
+        }
+      ],
+      "expires": "2026-11-25"
+    },
     {
       "id": "2026-11-10-windows-signdrop-clfs-exploit",
       "date": "2026-11-10",
@@ -336,38 +351,6 @@
       "audience": "Anyone running Plex Media Server version 1.43.2 or older on a PC or home server that can be reached from the internet. Watching through the Plex app alone is not affected.",
       "action": "Update Plex Media Server to the newest version from Plex.",
       "expires": "2026-11-19"
-    },
-    {
-      "id": "2026-10-13-windows-shell-exploited-flaw",
-      "date": "2026-10-13",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "October's Windows security update fixes a flaw attackers were already using",
-      "summary": "Microsoft's October 13 security update fixes CVE-2026-96951, a Windows Shell flaw that attackers were exploiting to slip past the warning Windows shows on files downloaded from the internet. It needs someone to open a booby-trapped file or link, and the same update fixes two other flaws that were public before the patch.",
-      "applies": [
-        "all"
-      ],
-      "sources": [
-        {
-          "name": "Microsoft Security Response Center",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
-        }
-      ],
-      "audience": "Every Windows PC that has not yet installed the October 13, 2026 security update or a later one.",
-      "action": "Keep Windows updated: open Windows Update and install the latest security update if it is waiting.",
-      "fixed_in": {
-        "windows_builds": [
-          "26100.9711",
-          "26200.9711",
-          "26300.9711"
-        ]
-      },
-      "expires": "2026-11-12"
     }
   ]
 }
