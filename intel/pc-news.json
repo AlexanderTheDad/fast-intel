@@ -40,7 +40,7 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-16",
   "items": [
     {
       "id": "2026-11-11-capframex-1-9-2",
@@ -253,23 +253,6 @@
         }
       ],
       "expires": "2026-11-17"
-    },
-    {
-      "id": "2026-11-01-fortnite-treasure-hunters",
-      "date": "2026-11-01",
-      "kind": "release",
-      "headline": "Fortnite's Treasure Hunters season moves Battle Royale to a new 80-player island",
-      "summary": "The new season starts on November 1 on Crossbones Isle, an island built for 80 players a match, with One Piece powers such as the Gum-Gum Fruit and new weapons dropping on set days through November. Epic says Chapter 7 ends with a live event on December 5.",
-      "applies": [
-        "game:fortnite"
-      ],
-      "sources": [
-        {
-          "name": "Epic Games",
-          "url": "https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time"
-        }
-      ],
-      "expires": "2026-11-15"
     },
     {
       "id": "2026-10-24-nvidia-621-01-video-freezes",
