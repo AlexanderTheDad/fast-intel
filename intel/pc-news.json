@@ -40,8 +40,31 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "items": [
+    {
+      "id": "2026-11-16-optimizely-scripts-card-skimmer",
+      "date": "2026-11-16",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "Hijacked scripts on CNN, BBC, Zoom and other big sites tried to steal card and crypto details",
+      "summary": "Several outlets report that on November 16 an attacker planted code in scripts that Optimizely, a web testing service, delivers to the sites of at least 178 organizations, among them CNN, the BBC and Zoom. The code was built to capture card details typed into those pages and to swap crypto wallet addresses for the attacker's. Optimizely says it fixed the flaw and removed the code.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
+        },
+        {
+          "name": "Malwarebytes",
+          "url": "https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack"
+        }
+      ],
+      "audience": "Anyone who typed card details or copied a crypto wallet address on an affected site on November 16. The PC itself is not affected.",
+      "action": "Check your card statement for payments you do not recognise, and check where any crypto transfer made that day went.",
+      "expires": "2026-11-26"
+    },
     {
       "id": "2026-11-11-capframex-1-9-2",
       "date": "2026-11-11",
@@ -64,7 +87,7 @@
       "category": "security",
       "status": "reported",
       "headline": "Public exploit code claims a way to take full control of Windows 11 from an ordinary account",
-      "summary": "Several outlets report that a researcher posted code on November 10 that lets a program already running under a normal account on current Windows 11 gain full SYSTEM control, and the researcher says it can switch off antivirus too. Microsoft has not confirmed it or released a fix, and no attacks using it have been reported.",
+      "summary": "Several outlets report that a researcher posted code on November 10 that lets a program already running under a normal account on current Windows 11 gain full SYSTEM control, and the researcher says it can switch off antivirus too. Microsoft says it is investigating and has not released a fix, and no attacks using it have been reported.",
       "applies": [],
       "sources": [
         {
@@ -74,6 +97,10 @@
         {
           "name": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
+        },
+        {
+          "name": "The Hacker News weekly recap",
+          "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html"
         }
       ],
       "audience": "Windows 11 PCs with Microsoft's log file protection on, which is the default on 25H2 and 26H2. An attacker first needs a program running on the PC.",
