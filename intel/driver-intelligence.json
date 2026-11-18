@@ -102,7 +102,7 @@
     "advanced_shader_delivery holds Microsoft's published driver minimums for one Hold bullet."
   ],
 
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
 
   "security_advisories": {
     "_comment": [
@@ -227,7 +227,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.24",
         "latest_known_released": "2026-11-12",
-        "latest_known_reports": "NVIDIA lists no open issues for this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74"],
         "notes": {
@@ -243,7 +243,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.24",
         "latest_known_released": "2026-11-12",
-        "latest_known_reports": "NVIDIA lists no open issues for this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01"],
         "notes": {
@@ -260,7 +260,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.24",
         "latest_known_released": "2026-11-12",
-        "latest_known_reports": "NVIDIA lists no open issues for this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01", "537.58"],
         "notes": {
@@ -278,7 +278,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.24",
         "latest_known_released": "2026-11-12",
-        "latest_known_reports": "NVIDIA lists no open issues for this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74", "546.01"],
         "notes": {
@@ -295,7 +295,7 @@
         "latest_tested": "610.47",
         "latest_known": "621.24",
         "latest_known_released": "2026-11-12",
-        "latest_known_reports": "NVIDIA lists no open issues for this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
+        "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
         "avoid": ["610.74"],
         "notes": {
