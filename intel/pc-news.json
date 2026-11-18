@@ -40,8 +40,31 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-17",
+  "last_updated": "2026-11-18",
   "items": [
+    {
+      "id": "2026-11-17-chrome-158-security-fixes",
+      "date": "2026-11-17",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "Chrome 158 fixes 204 security flaws, six of them rated critical",
+      "summary": "Google's November 17 Chrome update for Windows, version 158.0.8127.36/37, fixes 204 security flaws, six rated critical, among them flaws in its graphics, audio and video handling. Google does not say any of them has been used in attacks. Chrome installs the update itself but only finishes it after a restart.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Chrome Releases",
+          "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01699533288.html"
+        },
+        {
+          "name": "SecurityWeek",
+          "url": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/"
+        }
+      ],
+      "audience": "Anyone who uses Google Chrome on a PC and has not restarted it since the update arrived.",
+      "action": "Keep your browser updated: open Chrome's menu, Help, About Google Chrome, and select Relaunch if it asks.",
+      "expires": "2026-12-17"
+    },
     {
       "id": "2026-11-16-optimizely-scripts-card-skimmer",
       "date": "2026-11-16",
@@ -259,27 +282,6 @@
       "audience": "Anyone who opened the NIKKE PC launcher from late September to November 4. A PC without NIKKE is not affected.",
       "action": "Update the NIKKE launcher and run a full antivirus scan. If you played in that window, change your NIKKE, email and browser-saved passwords from another device.",
       "expires": "2026-12-04"
-    },
-    {
-      "id": "2026-11-03-nvidia-app-11-0-9-585",
-      "date": "2026-11-03",
-      "kind": "release",
-      "headline": "NVIDIA App 11.0.9.585 brings DLSS Override to PUBG, The Witcher 3 and 17 more games",
-      "summary": "The update lets you set DLSS Override from the NVIDIA App in 19 more games, among them PUBG: BATTLEGROUNDS, The Witcher 3 and Dragon's Dogma 2, and adds one-click optimal settings for six, including Gears of War: E-Day and EA SPORTS FC 27.",
-      "applies": [
-        "gpu:nvidia"
-      ],
-      "sources": [
-        {
-          "name": "NVIDIA",
-          "url": "https://www.nvidia.com/en-us/software/nvidia-app/release-highlights/"
-        },
-        {
-          "name": "TweakTown",
-          "url": "https://www.tweaktown.com/news/114499/nvidia-app-update-expands-dlss-override-to-19-new-games/index.html"
-        }
-      ],
-      "expires": "2026-11-17"
     },
     {
       "id": "2026-10-24-nvidia-621-01-video-freezes",
