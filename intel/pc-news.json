@@ -40,8 +40,54 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-20",
   "items": [
+    {
+      "id": "2026-11-18-asus-armoury-crate-privilege-flaw",
+      "date": "2026-11-18",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "ASUS fixes an Armoury Crate flaw that could let a program on the PC take full control of it",
+      "summary": "ASUS lists Armoury Crate versions up to 6.7.2 as affected by CVE-2026-112115. BleepingComputer reports it as a high-severity flaw that lets a program or user already on the PC without admin rights trick an elevated Armoury Crate process into loading a malicious file and gain full control.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "ASUS Security Advisory",
+          "url": "https://www.asus.com/security-advisory/"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/"
+        }
+      ],
+      "audience": "PCs with ASUS Armoury Crate 6.7.2 or older installed, which ships with many ASUS motherboards, laptops and ROG devices.",
+      "action": "Update Armoury Crate to its newest version from the app's own update page or from ASUS's site.",
+      "expires": "2026-12-18"
+    },
+    {
+      "id": "2026-11-18-nvidia-621-system-drive-writes",
+      "date": "2026-11-18",
+      "kind": "problem",
+      "category": "performance",
+      "status": "reported",
+      "headline": "Users report an NVIDIA service writing to the system drive nonstop on drivers 621.14 and 621.24",
+      "summary": "Users report an NVIDIA background service, NVDisplay.Container.exe, rewriting a log file on the system drive constantly on GeForce drivers 621.14 and 621.24, even with the PC idle. One measured about 515 MB in five idle minutes against under 2 MB on 621.01, and another reports about 30 GB an hour. Only some PCs are affected. NVIDIA has not commented.",
+      "applies": [
+        "gpu:nvidia"
+      ],
+      "sources": [
+        {
+          "name": "VideoCardz",
+          "url": "https://videocardz.com/newz/nvidia-geforce-driver-bug-may-cause-continuous-ssd-writes-even-at-idle"
+        },
+        {
+          "name": "NVIDIA forum thread",
+          "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/592907/continuous-writing-of-gigabytes-to-ssd-to-nvtopps-/"
+        }
+      ],
+      "expires": "2026-12-02"
+    },
     {
       "id": "2026-11-17-chrome-158-security-fixes",
       "date": "2026-11-17",
@@ -211,29 +257,6 @@
       "expires": "2026-12-09"
     },
     {
-      "id": "2026-11-09-sega-newsletter-breach",
-      "date": "2026-11-09",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "A breach at SEGA's newsletter provider exposed 2.2 million subscriber email addresses",
-      "summary": "SEGA says attackers who broke into ARARA, the company that sends its Japanese newsletters, took 2,196,044 subscriber email addresses. SEGA says names, passwords and card details were not taken, SEGA Account emails were not affected, and it has seen no misuse so far.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "SEGA",
-          "url": "https://www.sega.co.jp/release/261109_1.html"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/"
-        }
-      ],
-      "audience": "Anyone subscribed to SEGA or SEGA Fave newsletters in Japan, such as arcade, Lucky Kuji or Tokyo Game Show mailings. The PC itself is not affected.",
-      "action": "Be wary of emails that claim to come from SEGA or a card company and ask you to sign in or pay.",
-      "expires": "2026-11-19"
-    },
-    {
       "id": "2026-11-06-windows-paint-network-flaw",
       "date": "2026-11-06",
       "kind": "problem",
@@ -336,33 +359,6 @@
       "audience": "Anyone who installed Time4Popcorn, sold as Popcorn Time, on Windows, macOS or Android, even if it has not been opened in years. PCs without it are not affected.",
       "action": "If Popcorn Time is installed, remove it in Settings > Apps > Installed apps.",
       "expires": "2026-11-22"
-    },
-    {
-      "id": "2026-10-20-plex-media-server-plex2shell",
-      "date": "2026-10-20",
-      "kind": "problem",
-      "category": "security",
-      "status": "confirmed",
-      "headline": "Attackers are taking over older Plex Media Server installs to run crypto miners",
-      "summary": "Four chained flaws in Plex Media Server 1.43.2 and older, nicknamed Plex2Shell, let an attacker take over a server that can be reached from the internet without signing in. Attacks began on October 17 and installed crypto miners and proxy software, and the US agency CISA now lists the flaws as exploited. Plex fixed them in version 1.43.3.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "CISA Known Exploited Vulnerabilities",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/"
-        },
-        {
-          "name": "SecurityWeek",
-          "url": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/"
-        }
-      ],
-      "audience": "Anyone running Plex Media Server version 1.43.2 or older on a PC or home server that can be reached from the internet. Watching through the Plex app alone is not affected.",
-      "action": "Update Plex Media Server to the newest version from Plex.",
-      "expires": "2026-11-19"
     }
   ]
 }
