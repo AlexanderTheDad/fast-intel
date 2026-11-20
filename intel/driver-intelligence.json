@@ -18,7 +18,9 @@
     "                      and the card says nothing, which is the pre-2026-07-31 behaviour.",
     "     fallback       - { version, why } the driver to drop back to when the recommended one",
     "                      misbehaves on a specific rig. Must be older than recommended",
-    "     avoid          - list of driver versions with known gaming regressions",
+    "     avoid          - list of driver versions with known gaming regressions, or (owner,",
+    "                      2026-11-20) a fault that harms the PC itself, as 621.14/621.24's",
+    "                      nonstop system drive writes. See hardware-reference.md",
     "     notes          - measured evidence for the recommended version and the fault for each",
     "                      avoid version. See WRITING A NOTE below",
     "     download_url   - direct link to the recommended driver download page",
@@ -229,9 +231,11 @@
         "latest_known_released": "2026-11-12",
         "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
-        "avoid": ["610.74"],
+        "avoid": ["621.24", "621.14", "610.74"],
         "notes": {
           "610.47": "on a 4080 SUPER it improved frame-time consistency by 38%, and on a 2080 Ti it removed the hard stalls entirely (min FPS 2.1 to 22.7, 1% lows +21%, stutter time -28%). It does shift burst-moment work onto the CPU, so a CPU older than a 9900K or Ryzen 5000 can bottleneck in heavy scenes.",
+          "621.24": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
+          "621.14": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
           "610.74": "your screen flickers to black and comes back, at the desktop as well as in game. It is this release specifically, not the whole 610 branch."
         },
         "download_url": "https://www.nvidia.com/Download/index.aspx"
@@ -245,9 +249,11 @@
         "latest_known_released": "2026-11-12",
         "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
-        "avoid": ["610.74", "546.01"],
+        "avoid": ["621.24", "621.14", "610.74", "546.01"],
         "notes": {
           "610.47": "on a 4080 SUPER it improved frame-time consistency by 38%, and on a 2080 Ti it removed the hard stalls entirely (min FPS 2.1 to 22.7, 1% lows +21%, stutter time -28%). It does shift burst-moment work onto the CPU, so a CPU older than a 9900K or Ryzen 5000 can bottleneck in heavy scenes.",
+          "621.24": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
+          "621.14": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
           "610.74": "your screen flickers to black and comes back, at the desktop as well as in game. It is this release specifically, not the whole 610 branch.",
           "546.01": "your FPS drops the longer you play, and only restarting the game brings it back."
         },
@@ -262,9 +268,11 @@
         "latest_known_released": "2026-11-12",
         "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
-        "avoid": ["610.74", "546.01", "537.58"],
+        "avoid": ["621.24", "621.14", "610.74", "546.01", "537.58"],
         "notes": {
           "610.47": "on a 4080 SUPER it improved frame-time consistency by 38%, and on a 2080 Ti it removed the hard stalls entirely (min FPS 2.1 to 22.7, 1% lows +21%, stutter time -28%). It does shift burst-moment work onto the CPU, so a CPU older than a 9900K or Ryzen 5000 can bottleneck in heavy scenes.",
+          "621.24": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
+          "621.14": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
           "610.74": "your screen flickers to black and comes back, at the desktop as well as in game. It is this release specifically, not the whole 610 branch.",
           "546.01": "your FPS drops the longer you play, and only restarting the game brings it back.",
           "537.58": "Fortnite stutter-spikes on RTX 30-series while shaders compile."
@@ -280,9 +288,11 @@
         "latest_known_released": "2026-11-12",
         "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
-        "avoid": ["610.74", "546.01"],
+        "avoid": ["621.24", "621.14", "610.74", "546.01"],
         "notes": {
           "610.47": "on a 4080 SUPER it improved frame-time consistency by 38%, and on a 2080 Ti it removed the hard stalls entirely (min FPS 2.1 to 22.7, 1% lows +21%, stutter time -28%). It does shift burst-moment work onto the CPU, so a CPU older than a 9900K or Ryzen 5000 can bottleneck in heavy scenes.",
+          "621.24": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
+          "621.14": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
           "610.74": "your screen flickers to black and comes back, at the desktop as well as in game. It is this release specifically, not the whole 610 branch.",
           "546.01": "your FPS drops the longer you play, and only restarting the game brings it back."
         },
@@ -297,9 +307,11 @@
         "latest_known_released": "2026-11-12",
         "latest_known_reports": "NVIDIA lists no open issues for this release. Users and tech press report an NVIDIA background service writing to the system drive constantly on 621.14 and 621.24, even with the PC idle, with some users reporting up to 30 GB an hour; NVIDIA has not commented. Users also report Advanced Shader Delivery downloading the same shaders over and over for Xbox app games on this release. Users report brief black screens on the desktop and in games, and a few report a display that stays black after a restart until they roll back. Users also report S.T.A.L.K.E.R. 2 still hangs on a black screen or freezes at the shader compilation screen at launch on every 621 driver, including this one.",
         "fallback": { "version": "595.97", "why": "the last driver before the 610 branch jump" },
-        "avoid": ["610.74"],
+        "avoid": ["621.24", "621.14", "610.74"],
         "notes": {
           "610.47": "on a 4080 SUPER it improved frame-time consistency by 38%, and on a 2080 Ti it removed the hard stalls entirely (min FPS 2.1 to 22.7, 1% lows +21%, stutter time -28%). It does shift burst-moment work onto the CPU, so a CPU older than a 9900K or Ryzen 5000 can bottleneck in heavy scenes.",
+          "621.24": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
+          "621.14": "on some PCs NVIDIA's display service rewrites a log file on your system drive nonstop, even when the PC is idle, which uses up the SSD's write life; one tester measured 1.4 TB in under six days. It is part of the core driver, so turning off telemetry, deleting the file or reinstalling the same driver does not stop it.",
           "610.74": "your screen flickers to black and comes back, at the desktop as well as in game. It is this release specifically, not the whole 610 branch."
         },
         "download_url": "https://www.nvidia.com/Download/index.aspx"
