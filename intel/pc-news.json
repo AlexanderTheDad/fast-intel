@@ -40,8 +40,48 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-21",
   "items": [
+    {
+      "id": "2026-11-20-obs-33-0-2",
+      "date": "2026-11-20",
+      "kind": "release",
+      "headline": "OBS Studio 33.0.2 fixes a batch of crashes, and OBS lists a startup crash on some older CPUs",
+      "summary": "OBS Studio 33.0.2 fixes several crashes, including a browser related startup crash and virtual camera crashes on Windows, makes controller input in browser sources keep working when OBS is in the background, and turns on WebGPU for browser sources. OBS says this version can crash at startup on certain older processors.",
+      "applies": [
+        "app:obs"
+      ],
+      "sources": [
+        {
+          "name": "OBS Studio on GitHub",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2"
+        }
+      ],
+      "expires": "2026-12-04"
+    },
+    {
+      "id": "2026-11-19-windows-fastunlock-lock-screen",
+      "date": "2026-11-19",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "A new Windows lock screen bypass lets someone holding a locked PC run programs on it",
+      "summary": "Two outlets report that a researcher posted a method on November 19, called FastUnlock, that uses Narrator on the lock screen to run programs in a limited account without signing in, and a security firm says it works. It needs hands on the PC and a Microsoft account on it. Microsoft has not released a fix, and no attacks using it have been reported.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html"
+        },
+        {
+          "name": "Security Affairs",
+          "url": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html"
+        }
+      ],
+      "audience": "Windows PCs signed in with a Microsoft account that a stranger can get their hands on, such as a laptop. Nobody can use it over the internet, so a gaming PC at home is at low risk.",
+      "action": "Keep Windows updated so the fix arrives when Microsoft ships it, and do not leave a laptop where others can reach it.",
+      "expires": "2026-12-19"
+    },
     {
       "id": "2026-11-18-asus-armoury-crate-privilege-flaw",
       "date": "2026-11-18",
@@ -70,13 +110,21 @@
       "date": "2026-11-18",
       "kind": "problem",
       "category": "performance",
-      "status": "reported",
-      "headline": "Users report an NVIDIA service writing to the system drive nonstop on drivers 621.14 and 621.24",
-      "summary": "Users report an NVIDIA background service, NVDisplay.Container.exe, rewriting a log file on the system drive constantly on GeForce drivers 621.14 and 621.24, even with the PC idle. One measured about 515 MB in five idle minutes against under 2 MB on 621.01, and another reports about 30 GB an hour. Only some PCs are affected. NVIDIA has not commented.",
+      "status": "confirmed",
+      "headline": "NVIDIA's beta hotfix 621.35 fixes the nonstop system drive writes seen on drivers 621.14 and 621.24",
+      "summary": "NVIDIA confirmed a bug that can make its display service write to a log file on the system drive nonstop in the background; users reported it on GeForce drivers 621.14 and 621.24, up to 30 GB an hour on some PCs. Beta hotfix 621.35, out November 20, fixes it and is on NVIDIA's site, not in the NVIDIA App. The fix comes in NVIDIA's next WHQL driver, which has no date yet.",
       "applies": [
         "gpu:nvidia"
       ],
       "sources": [
+        {
+          "name": "NVIDIA hotfix 621.35",
+          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5940"
+        },
+        {
+          "name": "VideoCardz: hotfix 621.35",
+          "url": "https://videocardz.com/newz/nvidia-releases-geforce-621-35-hotfix-to-fix-excessive-ssd-writes"
+        },
         {
           "name": "VideoCardz",
           "url": "https://videocardz.com/newz/nvidia-geforce-driver-bug-may-cause-continuous-ssd-writes-even-at-idle"
@@ -86,7 +134,7 @@
           "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/592907/continuous-writing-of-gigabytes-to-ssd-to-nvtopps-/"
         }
       ],
-      "expires": "2026-12-02"
+      "expires": "2026-12-18"
     },
     {
       "id": "2026-11-17-chrome-158-security-fixes",
