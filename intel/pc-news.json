@@ -40,14 +40,14 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-21",
+  "last_updated": "2026-11-23",
   "items": [
     {
       "id": "2026-11-20-obs-33-0-2",
       "date": "2026-11-20",
       "kind": "release",
-      "headline": "OBS Studio 33.0.2 fixes a batch of crashes, and OBS lists a startup crash on some older CPUs",
-      "summary": "OBS Studio 33.0.2 fixes several crashes, including a browser related startup crash and virtual camera crashes on Windows, makes controller input in browser sources keep working when OBS is in the background, and turns on WebGPU for browser sources. OBS says this version can crash at startup on certain older processors.",
+      "headline": "OBS Studio 33.0.2 and 33.0.3 fix a batch of crashes, including a startup crash on some older CPUs",
+      "summary": "OBS Studio 33.0.2 fixes several crashes, including a browser related startup crash and virtual camera crashes on Windows, makes controller input in browser sources keep working when OBS is in the background, and turns on WebGPU for browser sources. 33.0.3, out November 22, fixes the crash at startup on certain older processors that 33.0.2 brought.",
       "applies": [
         "app:obs"
       ],
@@ -55,9 +55,13 @@
         {
           "name": "OBS Studio on GitHub",
           "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.2"
+        },
+        {
+          "name": "OBS Studio 33.0.3 on GitHub",
+          "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3"
         }
       ],
-      "expires": "2026-12-04"
+      "expires": "2026-12-06"
     },
     {
       "id": "2026-11-19-windows-fastunlock-lock-screen",
@@ -384,29 +388,6 @@
         }
       ],
       "expires": "2026-11-23"
-    },
-    {
-      "id": "2026-10-23-time4popcorn-updater-flaw",
-      "date": "2026-10-23",
-      "kind": "problem",
-      "category": "security",
-      "status": "reported",
-      "headline": "Millions of PCs still run a forgotten Popcorn Time updater that an attacker could have hijacked",
-      "summary": "Researchers report that Time4Popcorn, an abandoned fork of Popcorn Time, leaves an updater running that downloads updates without encryption or signature checks, so whoever held its old web address could run code with full rights on about 3 million Windows PCs. The researchers took the address and pushed an update that switched the updater off. No attacks have been reported.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Eye Security",
-          "url": "https://labs.eye.security/cve-2026-30612-a-vulnerability-in-time4popcorn-popcorntime/"
-        },
-        {
-          "name": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/"
-        }
-      ],
-      "audience": "Anyone who installed Time4Popcorn, sold as Popcorn Time, on Windows, macOS or Android, even if it has not been opened in years. PCs without it are not affected.",
-      "action": "If Popcorn Time is installed, remove it in Settings > Apps > Installed apps.",
-      "expires": "2026-11-22"
     }
   ]
 }
