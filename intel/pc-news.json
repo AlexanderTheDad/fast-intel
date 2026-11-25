@@ -40,8 +40,35 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-23",
+  "last_updated": "2026-11-25",
   "items": [
+    {
+      "id": "2026-11-21-fake-gta-vi-pc-client-stealer",
+      "date": "2026-11-21",
+      "kind": "problem",
+      "category": "security",
+      "status": "reported",
+      "headline": "A fake GTA VI PC streaming client installs malware that steals passwords, Steam and Discord logins",
+      "summary": "Bitdefender found a site offering a GTA VI cloud client for PC, which does not exist, that gets visitors to paste a command into the Run box. The command installs malware that takes saved browser passwords, cookies, Steam and Discord data, crypto wallets and screenshots. Several security outlets report it.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "Bitdefender",
+          "url": "https://www.bitdefender.com/en-us/blog/labs/fake-gta-vi-pc-client-malware-clickfix"
+        },
+        {
+          "name": "Hackread",
+          "url": "https://hackread.com/fake-gta-vi-streaming-client-malware-windows-pc/"
+        },
+        {
+          "name": "Cybernews",
+          "url": "https://cybernews.com/security/hackers-gta-vi-info-stealing-malware/"
+        }
+      ],
+      "audience": "Anyone who downloaded or ran a GTA VI PC or cloud client, or pasted a command from such a site. Other PCs are not affected.",
+      "action": "Never paste commands a website asks you to run. If you ran it, scan the PC, then change your passwords and turn on two-factor sign-in from a different device.",
+      "expires": "2026-12-21"
+    },
     {
       "id": "2026-11-20-obs-33-0-2",
       "date": "2026-11-20",
@@ -115,12 +142,16 @@
       "kind": "problem",
       "category": "performance",
       "status": "confirmed",
-      "headline": "NVIDIA's beta hotfix 621.35 fixes the nonstop system drive writes seen on drivers 621.14 and 621.24",
-      "summary": "NVIDIA confirmed a bug that can make its display service write to a log file on the system drive nonstop in the background; users reported it on GeForce drivers 621.14 and 621.24, up to 30 GB an hour on some PCs. Beta hotfix 621.35, out November 20, fixes it and is on NVIDIA's site, not in the NVIDIA App. The fix comes in NVIDIA's next WHQL driver, which has no date yet.",
+      "headline": "NVIDIA's 621.40 driver fixes the nonstop system drive writes seen on drivers 621.14 and 621.24",
+      "summary": "NVIDIA confirmed a bug that can make its display service write to a log file on the system drive nonstop in the background; users reported it on GeForce drivers 621.14 and 621.24, up to 30 GB an hour on some PCs. Game Ready driver 621.40, out November 24, lists the fix in NVIDIA's release notes. It first came in beta hotfix 621.35, which some users said did not stop the writes for good.",
       "applies": [
         "gpu:nvidia"
       ],
       "sources": [
+        {
+          "name": "NVIDIA 621.40 release notes",
+          "url": "https://us.download.nvidia.com/Windows/621.40/621.40-geforce-win11-x64-release-notes.pdf"
+        },
         {
           "name": "NVIDIA hotfix 621.35",
           "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5940"
@@ -138,6 +169,11 @@
           "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/592907/continuous-writing-of-gigabytes-to-ssd-to-nvtopps-/"
         }
       ],
+      "fixed_in": {
+        "nvidia_driver": [
+          "621.40"
+        ]
+      },
       "expires": "2026-12-18"
     },
     {
@@ -252,40 +288,6 @@
       "expires": "2026-12-10"
     },
     {
-      "id": "2026-11-10-windows-kb5132061-usb-audio-fix",
-      "date": "2026-11-10",
-      "kind": "release",
-      "headline": "November's Windows 11 update brings back USB audio devices that stopped working in September",
-      "summary": "Microsoft says the November 10 update for Windows 11 24H2, 25H2 and 26H2 fixes USB Audio 1.0 devices that failed to start with error code 10 after September's security update, along with this month's security fixes.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Microsoft Support",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/11/kb5132061-windows-11-24h2-25h2-26h2-security-update"
-        },
-        {
-          "name": "Windows release health",
-          "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2"
-        }
-      ],
-      "expires": "2026-11-24"
-    },
-    {
-      "id": "2026-11-09-discord-desktop-november-update",
-      "date": "2026-11-09",
-      "kind": "release",
-      "headline": "Discord's November update makes Go Live streaming lighter on the CPU and the app quicker to open",
-      "summary": "Discord says Go Live now copies fewer frames from the GPU to the CPU, cutting its CPU use while streaming by about 4.5 percent, and that the desktop app reaches a usable state noticeably faster than in April.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "Discord",
-          "url": "https://discord.com/blog/discord-patch-notes-november-9-2026"
-        }
-      ],
-      "expires": "2026-11-23"
-    },
-    {
       "id": "2026-11-09-chrome-exploited-flaw",
       "date": "2026-11-09",
       "kind": "problem",
@@ -357,37 +359,6 @@
       "audience": "Anyone who opened the NIKKE PC launcher from late September to November 4. A PC without NIKKE is not affected.",
       "action": "Update the NIKKE launcher and run a full antivirus scan. If you played in that window, change your NIKKE, email and browser-saved passwords from another device.",
       "expires": "2026-12-04"
-    },
-    {
-      "id": "2026-10-24-nvidia-621-01-video-freezes",
-      "date": "2026-10-24",
-      "kind": "problem",
-      "category": "stability",
-      "status": "confirmed",
-      "headline": "NVIDIA's 621.14 driver fixes the 621.01 bug that freezes or blacks out the screen during video",
-      "summary": "NVIDIA confirmed a bug in GeForce driver 621.01 that freezes the screen or turns it black for several seconds while a video plays in Chrome, Edge or VLC, sometimes when a game starts with a video open. Beta hotfix 621.12 fixed it on October 27, and Game Ready driver 621.14, out November 4, carries the fix for RTX 50 cards. The screen recovers without a restart.",
-      "applies": [
-        "gpu:nvidia"
-      ],
-      "sources": [
-        {
-          "name": "NVIDIA 621.14 feedback thread",
-          "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/592433/geforce-grd-62114-feedback-thread-released-11426/"
-        },
-        {
-          "name": "NVIDIA hotfix 621.12",
-          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5938"
-        },
-        {
-          "name": "NVIDIA 621.01 feedback thread",
-          "url": "https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/591981/geforce-grd-62101-feedback-thread-released-102126/"
-        },
-        {
-          "name": "VideoCardz",
-          "url": "https://videocardz.com/newz/nvidia-confirms-geforce-621-01-driver-bug-causing-video-freezes-and-black-screens"
-        }
-      ],
-      "expires": "2026-11-23"
     }
   ]
 }
