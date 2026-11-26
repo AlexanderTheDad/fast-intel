@@ -40,8 +40,31 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-26",
   "items": [
+    {
+      "id": "2026-11-25-1password-account-data-breach",
+      "date": "2026-11-25",
+      "kind": "problem",
+      "category": "security",
+      "status": "confirmed",
+      "headline": "1Password says an attacker copied names and email addresses of some customers, not vault contents",
+      "summary": "1Password says an attacker got into an employee's GitHub account on November 19 and used it to copy account records for a subset of customers, including names, email addresses and tokens from some invitation and recovery emails. It says passwords, vault items and the keys that protect them were never reached, and its apps are working normally.",
+      "applies": [],
+      "sources": [
+        {
+          "name": "1Password",
+          "url": "https://1password.com/blog/update-on-nov-2026-security-incident"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html"
+        }
+      ],
+      "audience": "Anyone with a 1Password account. The PC itself is not affected.",
+      "action": "Nothing to change in your account. Be wary of unexpected emails about 1Password, such as invitations or account recovery you did not ask for.",
+      "expires": "2026-12-05"
+    },
     {
       "id": "2026-11-21-fake-gta-vi-pc-client-stealer",
       "date": "2026-11-21",
@@ -221,21 +244,6 @@
       "audience": "Anyone who typed card details or copied a crypto wallet address on an affected site on November 16. The PC itself is not affected.",
       "action": "Check your card statement for payments you do not recognise, and check where any crypto transfer made that day went.",
       "expires": "2026-11-26"
-    },
-    {
-      "id": "2026-11-11-capframex-1-9-2",
-      "date": "2026-11-11",
-      "kind": "release",
-      "headline": "CapFrameX 1.9.2 adds a tile overlay you can design yourself and a lighter in-game overlay",
-      "summary": "CapFrameX 1.9.2 brings a tile overlay with its own editor and 45 starter designs, says its overlay now takes less from the game, and fixes PresentMon captures in long sessions and with frame generation. It now needs the .NET 10 Desktop Runtime.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "CapFrameX on GitHub",
-          "url": "https://github.com/CXWorld/CapFrameX/releases/tag/v1.9.2"
-        }
-      ],
-      "expires": "2026-11-25"
     },
     {
       "id": "2026-11-10-windows-signdrop-clfs-exploit",
