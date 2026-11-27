@@ -40,7 +40,7 @@
     "someone's problem unless its maker said so; never claim anything works with an anti-cheat;",
     "a single article or a rumour is not news; at most 20 live items."
   ],
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "items": [
     {
       "id": "2026-11-25-1password-account-data-breach",
@@ -221,29 +221,6 @@
       "audience": "Anyone who uses Google Chrome on a PC and has not restarted it since the update arrived.",
       "action": "Keep your browser updated: open Chrome's menu, Help, About Google Chrome, and select Relaunch if it asks.",
       "expires": "2026-12-17"
-    },
-    {
-      "id": "2026-11-16-optimizely-scripts-card-skimmer",
-      "date": "2026-11-16",
-      "kind": "problem",
-      "category": "security",
-      "status": "reported",
-      "headline": "Hijacked scripts on CNN, BBC, Zoom and other big sites tried to steal card and crypto details",
-      "summary": "Several outlets report that on November 16 an attacker planted code in scripts that Optimizely, a web testing service, delivers to the sites of at least 178 organizations, among them CNN, the BBC and Zoom. The code was built to capture card details typed into those pages and to swap crypto wallet addresses for the attacker's. Optimizely says it fixed the flaw and removed the code.",
-      "applies": [],
-      "sources": [
-        {
-          "name": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html"
-        },
-        {
-          "name": "Malwarebytes",
-          "url": "https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack"
-        }
-      ],
-      "audience": "Anyone who typed card details or copied a crypto wallet address on an affected site on November 16. The PC itself is not affected.",
-      "action": "Check your card statement for payments you do not recognise, and check where any crypto transfer made that day went.",
-      "expires": "2026-11-26"
     },
     {
       "id": "2026-11-10-windows-signdrop-clfs-exploit",
